@@ -39,6 +39,7 @@
 
 Hệ thống cơ sở dữ liệu được thiết kế chuẩn hóa để lưu vết chi tiết từng thao tác chọn đáp án của người dùng:
 
+
 ```mermaid
 erDiagram
     USERS {
@@ -82,29 +83,62 @@ erDiagram
     QUIZZES ||--o{ RESULTS : "được ghi nhận trong"
     RESULTS ||--o{ USER_ANSWERS : "chứa chi tiết"
     QUESTIONS ||--o{ USER_ANSWERS : "được trả lời tại"
+```
+
 
 
 ## 📸 Hình ảnh Giao diện Thực tế
 
 <p align="center">
-  <img src="miniquiz/Screenshot 2026-06-03 002211.png" width="400" alt="Trang chủ" />
-  <img src="miniquiz/Screenshot 2026-06-03 002518.png" width="400" alt="Đăng ký tài khoản" />
-<img src="miniquiz/Screenshot 2026-06-03 002453.png" width="400" alt="Đăng nhập" />
+  <figure>
+    <img src="miniquiz/Screenshot 2026-06-03 002211.png" width="400" alt="Trang chủ" />
+    <figcaption><b>🏠 Trang chủ hệ thống</b></figcaption>
+  </figure>
+
+  <figure>
+    <img src="miniquiz/Screenshot 2026-06-03 002518.png" width="400" alt="Đăng ký tài khoản" />
+    <figcaption><b>📝 Giao diện đăng ký tài khoản</b></figcaption>
+  </figure>
+
+  <figure>
+    <img src="miniquiz/Screenshot 2026-06-03 002453.png" width="400" alt="Đăng nhập" />
+    <figcaption><b>🔐 Giao diện đăng nhập</b></figcaption>
+  </figure>
 </p>
 
 <p align="center">
-  <img src="miniquiz/Screenshot 2026-06-03 002635.png" width="400" alt="Làm bài thi" />
-  <img src="miniquiz/Screenshot 2026-06-03 002755.png" width="400" alt="Lịch sử ôn tập" />
+  <figure>
+    <img src="miniquiz/Screenshot 2026-06-03 002635.png" width="400" alt="Làm bài thi" />
+    <figcaption><b>📚 Giao diện làm bài thi</b></figcaption>
+  </figure>
+
+  <figure>
+    <img src="miniquiz/Screenshot 2026-06-03 002755.png" width="400" alt="Lịch sử ôn tập" />
+    <figcaption><b>📊 Lịch sử ôn luyện và kết quả</b></figcaption>
+  </figure>
 </p>
 
 <p align="center">
-  <img src="miniquiz/Screenshot 2026-06-03 002820.png" width="400" alt="Kết quả chi tiết" />
-  <img src="miniquiz/Screenshot 2026-06-03 002955.png" width="400" alt="Quản lý đề thi Admin" />
+  <figure>
+    <img src="miniquiz/Screenshot 2026-06-03 002820.png" width="400" alt="Kết quả chi tiết" />
+    <figcaption><b>✅ Xem chi tiết đáp án bài làm</b></figcaption>
+  </figure>
+
+  <figure>
+    <img src="miniquiz/Screenshot 2026-06-03 002955.png" width="400" alt="Quản lý đề thi Admin" />
+    <figcaption><b>⚙️ Trang quản trị đề thi dành cho Admin</b></figcaption>
+  </figure>
 </p>
 
 <p align="center">
-  <img src="miniquiz/Screenshot 2026-06-03 003104.png" width="600" alt="Thêm đề thi mới" />
+  <figure>
+    <img src="miniquiz/Screenshot 2026-06-03 003104.png" width="600" alt="Thêm đề thi mới" />
+    <figcaption><b>➕ Chức năng thêm mới đề thi</b></figcaption>
+  </figure>
 </p>
+
+
+
 👨‍💻 Thông tin Tác giả
 Sinh viên thực hiện: Nguyễn Gia Khiêm
 MSSV: 65131478
