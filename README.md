@@ -83,14 +83,28 @@ erDiagram
     RESULTS ||--o{ USER_ANSWERS : "chứa chi tiết"
     QUESTIONS ||--o{ USER_ANSWERS : "được trả lời tại"
 
-📸 Hình ảnh Giao diện Thực tế
-1. Phân hệ Đăng ký & Đăng nhập
 
-2. Giao diện Làm bài thi trắc nghiệm
-3. Bảng Lịch sử Ôn luyện & Tiến độ học tập
-4. Giao diện Xem chi tiết kết quả
-5. Danh sách Quản lý Đề thi (Khu vực Admin)
-6. Biểu mẫu Thêm bộ đề thi mới (Khu vực Admin)
+## 📸 Hình ảnh Giao diện Thực tế
+
+<p align="center">
+  <img src="miniquiz/Screenshot 2026-06-03 002211.png" width="400" alt="Trang chủ" />
+  <img src="miniquiz/Screenshot 2026-06-03 002518.png" width="400" alt="Đăng ký tài khoản" />
+<img src="miniquiz/Screenshot 2026-06-03 002453.png" width="400" alt="Đăng nhập" />
+</p>
+
+<p align="center">
+  <img src="miniquiz/Screenshot 2026-06-03 002635.png" width="400" alt="Làm bài thi" />
+  <img src="miniquiz/Screenshot 2026-06-03 002755.png" width="400" alt="Lịch sử ôn tập" />
+</p>
+
+<p align="center">
+  <img src="miniquiz/Screenshot 2026-06-03 002820.png" width="400" alt="Kết quả chi tiết" />
+  <img src="miniquiz/Screenshot 2026-06-03 002955.png" width="400" alt="Quản lý đề thi Admin" />
+</p>
+
+<p align="center">
+  <img src="miniquiz/Screenshot 2026-06-03 003104.png" width="600" alt="Thêm đề thi mới" />
+</p>
 👨‍💻 Thông tin Tác giả
 Sinh viên thực hiện: Nguyễn Gia Khiêm
 MSSV: 65131478
