@@ -42,6 +42,7 @@
                             <td th:text="${quiz.description}"></td>
                             <td th:text="${quiz.timeLimitMinutes}"></td>
                             <td>
+                            <a th:href="@{'/admin/quiz/' + ${quiz.id} + '/questions'}" class="btn btn-sm btn-info text-white">Quản lý câu hỏi</a>
                                 <a th:href="@{'/admin/quiz/delete/' + ${quiz.id}}" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xóa?')">Xóa</a>
                             </td>
                         </tr>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý Câu hỏi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 th:text="'Câu hỏi: ' + ${quiz.title}"></h2>
+            <div>
+                <a th:href="@{'/admin/quiz/' + ${quiz.id} + '/question/add'}" class="btn btn-success">Thêm câu hỏi mới</a>
+                <a th:href="@{/admin/quizzes}" class="btn btn-secondary">Quay lại danh sách đề</a>
+            </div>
+        </div>
+
+        <div class="card shadow-sm mb-3" th:each="q, iterStat : ${questions}">
+            <div class="card-body">
+                <h5 class="card-title fw-bold" th:text="'Câu ' + ${iterStat.count} + ': ' + ${q.content}"></h5>
+                <div class="row mt-3">
+                    <div class="col-md-6 mb-2">
+                        <span th:classappend="${q.correctAnswer == 'A'} ? 'text-success fw-bold' : ''" th:text="'A. ' + ${q.optionA}"></span>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <span th:classappend="${q.correctAnswer == 'B'} ? 'text-success fw-bold' : ''" th:text="'B. ' + ${q.optionB}"></span>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <span th:classappend="${q.correctAnswer == 'C'} ? 'text-success fw-bold' : ''" th:text="'C. ' + ${q.optionC}"></span>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <span th:classappend="${q.correctAnswer == 'D'} ? 'text-success fw-bold' : ''" th:text="'D. ' + ${q.optionD}"></span>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <a th:href="@{'/admin/question/' + ${q.id} + '/edit'}" class="btn btn-sm btn-primary">Chỉnh sửa</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
